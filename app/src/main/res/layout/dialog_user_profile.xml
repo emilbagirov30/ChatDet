@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Профиль"
+        android:textColor="@color/black"
+        android:typeface = "monospace"
+       >
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+      >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="username"
+        android:textColor="@color/black"
+        android:textStyle="normal" >
+    </TextView>
+
+
+
+
+</LinearLayout>

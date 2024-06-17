@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ChatDet</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logIn_title">Вход</string>
+    <string name="login_hint_et">Логин</string>
+    <string name="password_hint_et">Пароль</string>
+    <string name="checkbox_remember">Запомнить</string>
+    <string name="question_forgot">Забыли пароль?</string>
+    <string name="logIn_button_text">Войти</string>
+    <string name="switch_to_registration_fragment_button_text">Регистрация</string>
+    <string name="registration_title">Регистрация</string>
+    <string name="code_word_hint_et">Кодовое слово</string>
+    <string name="back">Назад</string>
+    <string name="button_text_registration">Зарегестрироваться</string>
+    <string name="recovery_title">Восстановление пароля</string>
+    <string name="check_user_data_button_text">Проверить</string>
+    <string name="change_ip_title">Изменение ip сервера</string>
+    <string name="underline_cancel"><u>Закрыть</u></string>
+</resources>

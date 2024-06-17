@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegistrationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:typeface = "monospace"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/selection_avatar">
+    </ImageView>
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="50dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"
+        android:layout_height="50dp">
+
+    </ProgressBar>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="5dp"
+        android:maxLength="20"
+        android:background="@drawable/rounded_edit_text_bg"
+        android:padding="10dp"
+        android:hint="@string/login_hint_et">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="11sp"
+        android:text="Пользователь с таким логином уже существует">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="5dp">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit_text_bg"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:paddingEnd="34dp"
+            android:hint="@string/password_hint_et"/>
+
+        <ImageView
+            android:id="@+id/iv_eye_show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_margin="7dp"
+            android:background="@drawable/show_password"
+          />
+
+        <ImageView
+            android:id="@+id/iv_eye_hide"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_margin="7dp"
+            android:background="@drawable/hide_password"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="5dp"
+        >
+        <EditText
+            android:id="@+id/et_code_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/rounded_edit_text_bg"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:hint="@string/code_word_hint_et">
+        </EditText>
+        <ImageView
+            android:id="@+id/iv_hint_show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/hint"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/button_text_registration">
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

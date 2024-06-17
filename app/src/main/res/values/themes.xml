@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChatDet" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+
+    </style>
+
+    <style name="Theme.ChatDet" parent="Base.Theme.ChatDet" />
+
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="RoundDialog" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">@drawable/rounded_dialog</item>
+    </style>
+
+    <style name="DialogTransparent" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+</resources>
+

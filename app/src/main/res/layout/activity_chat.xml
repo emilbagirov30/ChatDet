@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_chat_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+      >
+
+    </androidx.recyclerview.widget.RecyclerView>
+        <ImageButton
+            android:id="@+id/ib_down"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="@drawable/down"
+            >
+
+        </ImageButton>
+    </FrameLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_check_picture"
+   android:visibility="gone"
+        android:layout_width="wrap_content"
+       android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_user_picture"
+            android:background="@drawable/empty_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+            android:id="@+id/iv_cancel_picture"
+            android:background="@drawable/cancel_picture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_panel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/pb_volume_amplitude"
+                android:layoutDirection="rtl"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <EditText
+                android:id="@+id/et_message"
+                android:scrollbars="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:background="@drawable/rounded_edit_text_bg"
+                android:padding="7dp"
+                android:layout_marginLeft="5dp"
+                android:hint="Введите ваше сообщение"
+                android:maxLines="6"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_stop_record"
+                android:background="@drawable/stop_record"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_stopwatch_record"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:text="0:00"/>
+
+            <ImageButton
+                android:id="@+id/iv_img"
+                android:background="@drawable/img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"/>
+
+            <ImageButton
+                android:id="@+id/iv_send"
+                android:background="@drawable/send"
+                android:visibility="gone"
+                android:layout_width="45dp"
+                android:layout_marginVertical="2dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="2dp"/>
+
+            <ImageButton
+                android:id="@+id/iv_record"
+                android:background="@drawable/record"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginVertical="2dp"
+                android:layout_marginRight="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

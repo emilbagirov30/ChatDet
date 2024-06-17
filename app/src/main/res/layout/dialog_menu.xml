@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+
+       >
+    <EditText
+        android:id="@+id/et_access_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_edit_text_bg"
+        android:padding="10dp"
+        android:paddingEnd="34dp"
+        android:hint="Код доступа">
+    </EditText>
+
+
+
+        <ImageView
+            android:id="@+id/iv_hint_show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/hint"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="11sp"
+        android:text="Код должен содержать более 3 символов">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Подключиться">
+
+    </Button>
+    <Button
+        android:id="@+id/bt_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль">
+
+    </Button>
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти">
+
+    </Button>
+</LinearLayout>

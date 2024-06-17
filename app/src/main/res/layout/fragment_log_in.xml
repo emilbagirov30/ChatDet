@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LogInFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logIn_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:typeface = "monospace"
+        >
+    </TextView>
+
+
+        <ImageButton
+            android:id="@+id/ib_settings"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/settings">
+
+        </ImageButton>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="50dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"
+        android:layout_height="50dp">
+
+    </ProgressBar>
+    <EditText
+android:id="@+id/et_username"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/rounded_edit_text_bg"
+        android:padding="10dp"
+        android:hint="@string/login_hint_et">
+
+
+    </EditText>
+
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="5dp">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit_text_bg"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:paddingEnd="34dp"
+            android:hint="@string/password_hint_et"/>
+
+        <ImageView
+            android:id="@+id/iv_eye_show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_margin="7dp"
+            android:background="@drawable/show_password"
+            />
+
+        <ImageView
+            android:id="@+id/iv_eye_hide"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_margin="7dp"
+            android:background="@drawable/hide_password"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_remember">
+
+    </CheckBox>
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0E9BB3"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/question_forgot">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bt_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/logIn_button_text">
+    </Button>
+
+
+
+
+
+    <Button
+        android:id="@+id/bt_registration"
+        android:layout_marginVertical="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_to_registration_fragment_button_text">
+    </Button>
+
+
+
+
+</LinearLayout>

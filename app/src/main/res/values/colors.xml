@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="edit_text_default_color">#ECECEC</color>
+    <color name="edit_text_message">#D1D1D1</color>
+    <color name="edit_text_error">#80BF2F2F</color>
+    <color name="main">#674fa3</color>
+    <color name="chat_background">#DDD4B3</color>
+    <color name="button_menu">#8E8E8E</color>
+    <color name="true_result">#80ADFFEC</color>
+    <color name="false_result">#80FB6262</color>
+    <color name="background_big">#272727</color>
+</resources>
